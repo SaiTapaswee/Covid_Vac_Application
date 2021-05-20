@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bookapp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccine Checklist"
+            android:textColor="@color/mainAppColor"
+            android:textSize="50sp" />
+
+
+        <TextView
+            android:id="@+id/question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="15dp"
+            android:text="Q1) Do you have any allergies?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad1"
+            android:layout_marginTop="15dp"
+            android:text="Q2)  If this is your second COVID-19 vaccine dose, did you have any of the allergies after the first dose?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad2"
+            android:layout_marginTop="15dp"
+            android:text="Q3) Do you have any problems with your immune system or are you taking any medications that can affect your immune system (e.g., high dose steroids, chemotherapy)?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question3"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radio_n3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad3"
+            android:layout_marginTop="15dp"
+            android:text="Q4) Do you have an autoimmune condition?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radio_n4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad4"
+            android:layout_marginTop="15dp"
+            android:text="Q5) Are you or could you be pregnant?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad5"
+            android:layout_marginTop="15dp"
+            android:text="Q6) If this is your second dose, did you have any allergic reactions after the first dose, or side effects for which you sought medical attention?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question6"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad6"
+            android:layout_marginTop="15dp"
+            android:text="Q7) Have you ever experienced a previous cerebral venous sinus thrombosis (CVST) with thrombocytopenia or heparin-induced thrombocytopenia (HIT) ? (Specific to AstraZeneca/COVISHIELD and Janssen vaccines only)"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question7"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad7"
+            android:layout_marginTop="15dp"
+            android:text="Q8) Have you recently received specific medications for COVID-19 prevention or treatment (monoclonal antibodies or convalescent plasma) within the last 3 months?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad8"
+            android:layout_marginTop="15dp"
+            android:text="Q9) Are you feeling ill today?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question9"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_n9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rad9"
+            android:layout_marginTop="15dp"
+            android:text="Q10)  Have you ever felt faint or fainted after a past vaccination or medical procedure?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/rad10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_y10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/radio_n10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:layout_below="@+id/rad10"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</ScrollView>

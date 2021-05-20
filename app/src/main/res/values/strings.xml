@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Covid_App</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string-array name="status">
+        <item>Pending</item>
+        <item>In Progress</item>
+        <item>Approved</item>
+    </string-array>
+</resources>
